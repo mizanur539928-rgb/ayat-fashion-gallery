@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><title>Ayat Fashion Gallery</title>
+<style>
+:root{--bg:#080808;--panel:#151515;--gold:#d8b45a;--pale:#f3dfaa;--pink:#d41468;--muted:#c4b99f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#f8f3e9;font-family:system-ui,"Noto Sans Bengali",sans-serif}.wrap{width:min(980px,92%);margin:auto}header{background:#050505;border-bottom:1px solid #59451f;text-align:center;padding:12px}header img{width:min(190px,55vw);max-height:125px;object-fit:contain}.hero{padding:35px 0;text-align:center;background:radial-gradient(ellipse at center,#38250f,#080808 70%)}h1,h2{color:var(--pale)}h1{font: bold clamp(30px,6vw,48px) Georgia,serif;margin:8px}.sub{color:#d8cbb0;line-height:1.8}.card{max-width:680px;margin:28px auto;border:1px solid #70572a;border-radius:10px;overflow:hidden;background:var(--panel)}.product-photo{width:100%;height:auto;max-height:720px;object-fit:contain;display:block;background:#eee8df}.details{padding:20px}.tag{display:inline-block;background:var(--gold);color:#171107;padding:4px 10px;border-radius:4px;font-size:12px;font-weight:800}.price{color:var(--pale);font-weight:800;line-height:1.9}label{display:block;margin:16px 0 7px;color:var(--pale)}select,input{width:100%;padding:12px;border-radius:6px;border:1px solid #80632c;background:#0d0d0d;color:white;font-size:16px}.note{color:var(--muted);font-size:13px;line-height:1.7}.total{border-top:1px solid #59451f;margin-top:18px;padding-top:14px;line-height:1.9}button{width:100%;padding:14px;border:0;border-radius:6px;background:linear-gradient(120deg,#b98b2e,#f4df9a);color:#171107;font-size:16px;font-weight:800;margin-top:16px}.delivery{border:1px solid #59451f;border-radius:8px;padding:18px;text-align:center;margin:24px auto;color:#e8dcc2}footer{text-align:center;color:var(--muted);font-size:12px;padding:22px}
+</style></head><body>
+<header><img src="assets/ayat-fashion-gallery-logo.png" alt="Ayat Fashion Gallery লোগো"></header>
+<section class="hero"><div class="wrap"><div style="color:#d8b45a;letter-spacing:2px">ELEGANCE • MODEST FASHION</div><h1>Ayat Fashion Gallery</h1><div class="sub">আপনার পছন্দের ফ্যাশন, আভিজাত্যের ছোঁয়ায়</div></div></section>
+<main class="wrap">
+<article class="card"><img class="product-photo" src="assets/china-net-cherry-hijab.jpg" alt="আপনার দেওয়া আসল চায়না নেট + চেরি ২ পার্ট কুচি হিজাবের ছবি"><div class="details"><span class="tag">হিজাব কালেকশন</span><h2>চায়না নেট + চেরি ২ পার্ট কুচি হিজাব</h2><p class="note">আপনার পাঠানো আসল ছবিটি অপরিবর্তিতভাবে ব্যবহার করা হয়েছে।</p><p class="price">XL: ৭০০ টাকা<br>XXL: ৮০০ টাকা</p>
+<label for="size">সাইজ নির্বাচন করুন</label><select id="size"><option value="XL" data-price="700">XL — ৭০০ টাকা</option><option value="XXL" data-price="800">XXL — ৮০০ টাকা</option></select>
+<label for="qty">পরিমাণ</label><input id="qty" type="number" min="1" value="1">
+<label for="area">ডেলিভারি এলাকা</label><select id="area"><option value="inside">ঢাকার ভিতরে — ৭০ টাকা</option><option value="outside">ঢাকার বাইরে — ১৪০ টাকা</option></select>
+<div class="total" id="total">পণ্যের দাম: ৭০০ টাকা<br>ডেলিভারি: ৭০ টাকা<br><b>সর্বমোট: ৭৭০ টাকা</b></div>
+<p class="note">এটি অর্ডার ফরমের নমুনা। আপনার নাম, ঠিকানা ও ফোন নম্বরের পূর্ণ অর্ডার ব্যবস্থা পরের ধাপে যুক্ত করা হবে। এখনো অর্ডার পাঠানো হয় না।</p>
+</div></article>
+<div class="delivery"><b style="color:#f3dfaa">ক্যাশ অন ডেলিভারি</b><br>ঢাকার ভিতরে ৭০ টাকা • ঢাকার বাইরে ১৪০ টাকা</div>
+
+<section class="wrap" id="order-form" style="padding:18px 0 42px">
+  <article class="card" style="padding:20px">
+    <h2 style="margin-top:0">অর্ডার ফরম</h2>
+    <p class="note">আপনার তথ্য পূরণ করে WhatsApp-এ অর্ডার পাঠান। WhatsApp খুললে Send চাপতে হবে।</p>
+    <form id="customerOrder">
+      <label for="customerName">আপনার নাম</label>
+      <input id="customerName" type="text" placeholder="সম্পূর্ণ নাম লিখুন" required>
+      <label for="customerPhone">মোবাইল নম্বর</label>
+      <input id="customerPhone" type="tel" inputmode="tel" placeholder="01XXXXXXXXX" required>
+      <label for="customerAddress">সম্পূর্ণ ডেলিভারি ঠিকানা</label>
+      <input id="customerAddress" type="text" placeholder="বাসা/রোড, এলাকা, জেলা" required>
+      <button type="submit">WhatsApp-এ অর্ডার পাঠান</button>
+    </form>
+    <p class="note">অর্ডার পাঠানোর আগে WhatsApp-এ তথ্যগুলো দেখে নিশ্চিত করুন।</p>
+  </article>
+</section>
+
+</main><footer>Ayat Fashion Gallery — প্রাথমিক ডিজাইন প্রিভিউ, এখনো অনলাইনে প্রকাশিত নয়।</footer>
+<script>
+const size=document.getElementById('size'),qty=document.getElementById('qty'),area=document.getElementById('area'),total=document.getElementById('total');
+function taka(n){return new Intl.NumberFormat('bn-BD').format(n)}
+function update(){let p=Number(size.selectedOptions[0].dataset.price),q=Math.max(1,Number(qty.value)||1),d=area.value==='inside'?70:140;total.innerHTML='পণ্যের দাম: '+taka(p*q)+' টাকা<br>ডেলিভারি: '+taka(d)+' টাকা<br><b>সর্বমোট: '+taka(p*q+d)+' টাকা</b>'}
+[size,qty,area].forEach(el=>el.addEventListener('input',update));update();
+
+document.getElementById('customerOrder').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('customerName').value.trim();
+  const phone = document.getElementById('customerPhone').value.trim();
+  const address = document.getElementById('customerAddress').value.trim();
+  const selectedSize = size.value;
+  const quantity = Math.max(1, Number(qty.value) || 1);
+  const unitPrice = Number(size.selectedOptions[0].dataset.price);
+  const delivery = area.value === 'inside' ? 70 : 140;
+  const productTotal = unitPrice * quantity;
+  const grandTotal = productTotal + delivery;
+  const areaText = area.value === 'inside' ? 'ঢাকার ভিতরে' : 'ঢাকার বাইরে';
+  const message = [
+    'আসসালামু আলাইকুম, Ayat Fashion Gallery-তে অর্ডার করতে চাই।',
+    '',
+    'পণ্য: চায়না নেট + চেরি ২ পার্ট কুচি হিজাব',
+    'সাইজ: ' + selectedSize,
+    'পরিমাণ: ' + quantity,
+    'প্রতি পণ্যের দাম: ' + unitPrice + ' টাকা',
+    'পণ্যের মোট: ' + productTotal + ' টাকা',
+    'ডেলিভারি এলাকা: ' + areaText,
+    'ডেলিভারি চার্জ: ' + delivery + ' টাকা',
+    'সর্বমোট: ' + grandTotal + ' টাকা',
+    '',
+    'ক্রেতার নাম: ' + name,
+    'মোবাইল: ' + phone,
+    'ঠিকানা: ' + address,
+    'পেমেন্ট: ক্যাশ অন ডেলিভারি'
+  ].join('\n');
+  const url = 'https://wa.me/8801795086506?text=' + encodeURIComponent(message);
+  window.open(url, '_blank', 'noopener');
+});
+
+</script></body></html>
